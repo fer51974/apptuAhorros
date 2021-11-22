@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "autoname": "field:ci",
+ "creation": "2021-11-22 08:51:49.024349",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ci",
+  "nombre",
+  "fecha_nacimiento",
+  "telefono",
+  "tipo_vivienda",
+  "direccion",
+  "actividad",
+  "estado_civil",
+  "datos_del_c\u00f3nyuge_column",
+  "ci_conyuge",
+  "nombre_conyuge",
+  "fecha_conyuge",
+  "trabajo_conyuge"
+ ],
+ "fields": [
+  {
+   "fieldname": "ci",
+   "fieldtype": "Data",
+   "label": "C.I",
+   "unique": 1
+  },
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "label": "Nombre"
+  },
+  {
+   "fieldname": "fecha_nacimiento",
+   "fieldtype": "Date",
+   "label": "Fecha_Nacimiento"
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "Telefono"
+  },
+  {
+   "fieldname": "tipo_vivienda",
+   "fieldtype": "Select",
+   "label": "Vivienda",
+   "options": "Propia\nArrendada\nFamiliares"
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Geolocation",
+   "label": "Direcci\u00f3n Domiciliaria"
+  },
+  {
+   "fieldname": "actividad",
+   "fieldtype": "Data",
+   "label": "Actividad Economica"
+  },
+  {
+   "fieldname": "estado_civil",
+   "fieldtype": "Select",
+   "label": "Estado Civil",
+   "options": "Soltero\nCasado\nDivorciado\nViudo\nOtro"
+  },
+  {
+   "fieldname": "datos_del_c\u00f3nyuge_column",
+   "fieldtype": "Column Break",
+   "label": "Datos del C\u00f3nyuge"
+  },
+  {
+   "fieldname": "ci_conyuge",
+   "fieldtype": "Data",
+   "label": "C.I"
+  },
+  {
+   "fieldname": "nombre_conyuge",
+   "fieldtype": "Data",
+   "label": "Nombre"
+  },
+  {
+   "fieldname": "fecha_conyuge",
+   "fieldtype": "Date",
+   "label": "Fecha Nacimiento"
+  },
+  {
+   "fieldname": "trabajo_conyuge",
+   "fieldtype": "Data",
+   "label": "Trabajo"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-11-22 10:23:14.931539",
+ "modified_by": "Administrator",
+ "module": "app",
+ "name": "Garantes",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,208 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-11-22 09:00:29.933573",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "fecha",
+  "socio",
+  "socio_nombre",
+  "socio_vivienda",
+  "socio_actividad",
+  "socio_estado",
+  "informaci\u00f3n_garante",
+  "garante",
+  "garante_nombre",
+  "garante_telefono",
+  "granate_vivienda",
+  "section_break_13",
+  "asesor",
+  "monto",
+  "tipo_credito",
+  "agencia",
+  "numero_cuotas",
+  "column_break_19",
+  "activos",
+  "pasivos",
+  "total_activos",
+  "total_pasivos",
+  "capital"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Code",
+   "hidden": 1,
+   "label": "Codigo",
+   "options": "Silicitud-"
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha"
+  },
+  {
+   "fieldname": "socio",
+   "fieldtype": "Link",
+   "label": "C.I Solicitante",
+   "options": "Socios"
+  },
+  {
+   "fetch_from": "socio.nombre",
+   "fieldname": "socio_nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Nombre Socio",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "socio.tipo_vivienda",
+   "fieldname": "socio_vivienda",
+   "fieldtype": "Data",
+   "label": "Tipo Vivienda",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "socio.actividad",
+   "fieldname": "socio_actividad",
+   "fieldtype": "Data",
+   "label": "Actividad Econ\u00f3mica",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "socio.estado_civil",
+   "fieldname": "socio_estado",
+   "fieldtype": "Data",
+   "label": "Estado Civil",
+   "read_only": 1
+  },
+  {
+   "fieldname": "informaci\u00f3n_garante",
+   "fieldtype": "Column Break",
+   "label": "Informaci\u00f3n Garante"
+  },
+  {
+   "fieldname": "garante",
+   "fieldtype": "Link",
+   "label": "C.I Garante",
+   "options": "Garantes"
+  },
+  {
+   "fetch_from": "garante.nombre",
+   "fieldname": "garante_nombre",
+   "fieldtype": "Data",
+   "label": "Nombre ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "garante.telefono",
+   "fieldname": "garante_telefono",
+   "fieldtype": "Data",
+   "label": "Telefono",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "garante.tipo_vivienda",
+   "fieldname": "granate_vivienda",
+   "fieldtype": "Data",
+   "label": "Vivienda",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "asesor",
+   "fieldtype": "Data",
+   "label": "Asesor Comercial"
+  },
+  {
+   "fieldname": "monto",
+   "fieldtype": "Currency",
+   "label": "Monto Solicitado"
+  },
+  {
+   "fieldname": "tipo_credito",
+   "fieldtype": "Select",
+   "label": "Producto de Cr\u00e9dito",
+   "options": "Microcr\u00e9dito\nConsumo\nVivienda"
+  },
+  {
+   "fieldname": "agencia",
+   "fieldtype": "Data",
+   "label": "Agencia"
+  },
+  {
+   "fieldname": "numero_cuotas",
+   "fieldtype": "Int",
+   "label": "Numero de Cuotas"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "activos",
+   "fieldtype": "Table",
+   "label": "Activos",
+   "options": "Detalle_Activos"
+  },
+  {
+   "fieldname": "total_activos",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Total Activos"
+  },
+  {
+   "fieldname": "total_pasivos",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Total Pasivos"
+  },
+  {
+   "fieldname": "capital",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Capital",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pasivos",
+   "fieldtype": "Table",
+   "label": "Pasivos",
+   "options": "Detalle_Pasivos"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-11-22 10:30:24.254807",
+ "modified_by": "Administrator",
+ "module": "app",
+ "name": "Solicitud",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
